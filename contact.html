@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Prendre Rendez-vous | Contact | Studio Mund Bordeaux</title>
+  <meta name="description" content="Planifiez un rendez-vous ou demandez un devis personnalisé au Studio Mund. Formulaire complet d'estimation de budget et de type de projet.">
+  <meta name="keywords" content="contact studio mund, devis graphiste bordeaux, réserver rendez-vous graphiste, elsa dumartin contact, hello@studiomund.fr">
+  
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/favicon-32x32.png">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor custom-cursor--inner"></div>
+  <div class="custom-cursor custom-cursor--outer"></div>
+
+  <!-- Page Loader -->
+  <div class="page-loader">
+    <div class="loader-watermark-container">
+      <img src="assets/StudioMund-watermark1-rouge_0f592fff.svg" alt="Watermark 1">
+      <img src="assets/StudioMund-watermark2-rouge_172413af.svg" alt="Watermark 2">
+    </div>
+  </div>
+
+  <!-- Desktop Navigation Sidebar -->
+  <aside class="nav-sidebar">
+    <div class="nav-brand">
+      <img src="assets/StudioMund-watermark1-rouge_0f592fff.svg" alt="Studio Mund" class="nav-brand-watermark">
+      <a href="index.html" class="nav-brand-text">M.</a>
+    </div>
+    
+    <nav class="nav-links-vertical">
+      <a href="index.html" class="nav-link-item">Accueil</a>
+      <a href="projets.html" class="nav-link-item">Projets</a>
+      <a href="services.html" class="nav-link-item">Services</a>
+      <a href="agence.html" class="nav-link-item">À Propos</a>
+      <a href="contact.html" class="nav-link-item active">Contact</a>
+    </nav>
+    
+    <div class="nav-footer-socials">
+      <a href="contact.html" title="Prendre Rendez-vous" class="clickable"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></a>
+    </div>
+  </aside>
+
+  <!-- Mobile Navigation Header -->
+  <header class="mobile-header">
+    <a href="index.html" class="mobile-brand">Studio Mund</a>
+    <button class="hamburger" aria-label="Menu Toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation Overlay Menu -->
+  <div class="mobile-menu-overlay">
+    <nav class="mobile-menu-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="services.html">Services</a>
+      <a href="agence.html">À Propos</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="contact.html" class="cta-nav-mobile">Prendre RDV</a>
+    </nav>
+  </div>
+
+  <!-- Main Content Space -->
+  <main>
+    
+    <!-- Contact & Booking Section -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <header style="margin-bottom: 5rem;" class="reveal">
+          <span class="text-uppercase text-primary" style="display:block; margin-bottom:1.5rem;">Contact & RDV</span>
+          <h1>Parlons de votre projet</h1>
+        </header>
+
+        <div class="booking-section">
+          
+          <!-- Contact Details Column -->
+          <div class="booking-info-col reveal">
+            <h2>Une idée ? Un besoin créatif ?</h2>
+            <p class="lead">Remplissez le formulaire de prise de rendez-vous pour évaluer la faisabilité et le coût de vos créations graphiques ou web design.</p>
+            <p>Nous prendrons le temps d'échanger en détail lors d'un appel d'une demi-heure afin d'analyser vos enjeux et d'établir une proposition sur-mesure.</p>
+            
+            <div class="booking-contact-details">
+              <div class="booking-contact-item">
+                <span class="label">Écrivez-nous</span>
+                <span class="val">hello@studiomund.fr</span>
+              </div>
+              <div class="booking-contact-item">
+                <span class="label">Adresse physique</span>
+                <span class="val">96 cours Le Rouzic<br>33100 Bordeaux</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Form Booking Column -->
+          <div class="booking-form-col reveal">
+            
+            <form id="bookingForm" class="booking-form">
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Prénom & Nom *</label>
+                  <input type="text" id="fullName" required placeholder="Ex: Jean Dupont">
+                </div>
+                <div class="form-group">
+                  <label for="companyEmail">Email professionnel *</label>
+                  <input type="email" id="companyEmail" required placeholder="Ex: jean@entreprise.fr">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="phone">Téléphone *</label>
+                  <input type="tel" id="phone" required placeholder="Ex: 06 12 34 56 78">
+                </div>
+                <div class="form-group">
+                  <label for="companyName">Nom de l'entreprise *</label>
+                  <input type="text" id="companyName" required placeholder="Ex: Pampa Corp">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="projectType">Type de projet *</label>
+                  <select id="projectType" required>
+                    <option value="" disabled selected>Sélectionner un service</option>
+                    <option value="identity">Identité visuelle / Branding</option>
+                    <option value="web">Design de site web (Vitrine / E-commerce)</option>
+                    <option value="print">Support Imprimé (Lookbook, Catalogue)</option>
+                    <option value="motion">Motion Design</option>
+                    <option value="other">Autre demande créative</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="projectBudget">Budget estimé *</label>
+                  <select id="projectBudget" required>
+                    <option value="" disabled selected>Sélectionner une tranche</option>
+                    <option value="low">Moins de 1 000 €</option>
+                    <option value="mid">Entre 1 000 et 5 000 €</option>
+                    <option value="high">Entre 5 000 et 15 000 €</option>
+                    <option value="premium">Plus de 15 000 €</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="targetDate">Date souhaitée de lancement</label>
+                  <input type="date" id="targetDate">
+                </div>
+              </div>
+
+              <div class="availability-group">
+                <span class="availability-title">Disponibilités préférées pour l'appel</span>
+                <div class="availability-options">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="availTime" value="morning"> Matin
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="availTime" value="afternoon"> Après-midi
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="availTime" value="evening"> Soirée
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group full-width" style="margin-bottom: 3rem;">
+                <label for="projectDesc">Description de votre projet *</label>
+                <textarea id="projectDesc" rows="5" required placeholder="Décrivez en quelques mots l'histoire, la cible et les enjeux de votre marque..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary">Envoyer la demande</button>
+              
+            </form>
+
+            <!-- Success Screen -->
+            <div id="bookingSuccess" class="booking-success-message">
+              <h3>Merci beaucoup !</h3>
+              <p class="lead">Votre demande de rendez-vous a bien été transmise à Elsa.</p>
+              <p>Nous étudions vos éléments et vous recontactons sous 48 heures pour fixer le premier entretien créatif.</p>
+              <a href="index.html" class="btn-secondary" style="margin-top: 2rem;">Retour à l'accueil</a>
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared Footer -->
+  <footer class="main-footer">
+    <img src="assets/StudioMund-watermark2-rouge_172413af.svg" alt="Watermark logo" class="footer-logo-watermark">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h4>Studio Mund</h4>
+          <p>Direction artistique print & web. Création graphique sur-mesure à taille humaine.</p>
+        </div>
+        <div class="footer-links">
+          <h5>Plan du site</h5>
+          <nav class="footer-links-list">
+            <a href="index.html">Accueil</a>
+            <a href="projets.html">Projets</a>
+            <a href="services.html">Services</a>
+            <a href="agence.html">À Propos</a>
+            <a href="contact.html">Contact & RDV</a>
+          </nav>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <div class="footer-contact-info">
+            <p><span>Email</span>hello@studiomund.fr</p>
+            <p><span>Adresse</span>96 cours Le Rouzic, 33100 Bordeaux</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Studio Mund. Tous droits réservés.</p>
+        <p>Site redesigné avec attention ♥ par Tristan</p>
+        <div class="footer-socials">
+          <a href="https://studiomund.fr" target="_blank" class="clickable">Web</a>
+          <a href="https://www.instagram.com/studio_mund/" target="_blank" class="clickable">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
